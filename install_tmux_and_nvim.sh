@@ -42,7 +42,7 @@ if [ ! -d "$LAZYPATH" ]; then
 fi
 
 # Clone config and move it to appropriate dir
-git clone https://github.com/jewelltaylor/nvim-config 
+git clone --branch without-copilot --single-branch https://github.com/jewelltaylor/nvim-config 
 mkdir -p ~/.config/nvim
 mv nvim-config/init.lua ~/.config/nvim/init.lua
 rm -rf nvim-config
